@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+    </head>
+    <body>
+        <form action="#">
+            <fieldset>
+                <legend>Metoda płatności:</legend>
+                <label for="karta"> Karta</label>
+                <input id="karta" type="radio" name="metoda-platnosci" value="karta">
+                <label for="gotowka"> Gotówka</label>
+                <input id="gotowka" type="radio" name="metoda-platnosci" value="gotowka" checked>
+            </fieldset>
+            <fieldset>
+                <legend>Wybierz typ usługi:</legend>
+                <label for="pielegnacja"> Pielęgnacja</label>
+                <input id="pielegnacja" type="checkbox" name="typ-uslugi" value="pielegnacja" checked>
+                <label for="strzyzenie"> Strzyżenie</label>
+                <input id="strzyzenie" type="checkbox" name="typ-uslugi" value="strzyzenie">
+                <label for="koloryzacja"> Koloryzacja</label>
+                <input id="koloryzacja" type="checkbox" name="typ-uslugi" value="koloryzacja">
+                <label for="modelowanie"> Modelowanie</label>
+                <input id="modelowanie" type="checkbox" name="typ-uslugi" value="modelowanie">
+            </fieldset>
+            <fieldset>
+                <legend>Termin:</legend>
+                <input id="data" type="date" name="termin">
+                <input id="godzina" type="time" name="termin">
+            </fieldset>
+            <fieldset>
+                <legend>Dane kontaktowe:</legend>
+                <label for="imie"> Imię:</label>
+                <input id="imie" type="text" name="dane-kontaktowe">
+                <br>
+                <label for="nazwisko"> Nazwisko:</label>
+                <input id="nazwisko" type="text" name="dane-kontaktowe">
+                <br>
+                <label for="telefon"> Telefon:</label>
+                <input id="telefon" type="tel" pattern="[0-9]{9}" name="dane-kontaktowe">
+            </fieldset>
+            <button type="submit">Złóż rezerwację</button>
+          </form>
+    </body>
+</html>
